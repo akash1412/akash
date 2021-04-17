@@ -122,14 +122,14 @@ const Project = ({ id, imgSrc, title, about, links, stack }) => (
 					color='text'
 					justifySelf='start'
 					lineHeight='2rem'
-					fontSize='1.5rem'>
+					fontSize='1.6rem'>
 					{about}
 				</Heading>
 
 				<Heading
 					as='h3'
-					fontWeight='400'
-					fontSize='1.2rem'
+					fontWeight='450'
+					fontSize='1.3rem'
 					my={[".8rem", ".8rem", ".8rem", "0"]}
 					color='primaryDark'>
 					{stack}
