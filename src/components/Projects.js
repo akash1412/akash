@@ -108,6 +108,7 @@ const Project = ({ id, imgSrc, title, about, links, stack }) => (
 
 			<Box
 				// w={["100%", "100%", "100%", "40%"]}
+
 				w={["100%", "100%", "100%", "45rem", "48rem"]}
 				d='flex'
 				flexDir='column'
@@ -134,8 +135,6 @@ const Project = ({ id, imgSrc, title, about, links, stack }) => (
 				</Heading>
 
 				<Box
-					// alignSelf={["center", "center", "center", "initial"]}
-					// mt={["3rem", "4rem", "4rem", "auto", "auto"]}
 					fontSize='1.8rem'
 					d='flex'
 					justifyContent={[

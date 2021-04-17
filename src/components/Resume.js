@@ -5,7 +5,8 @@ import { Page, pdfjs } from "react-pdf";
 
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 import resume from "../assets/pdf.pdf";
-pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/2.5.207/pdf.worker.min.js`;
+pdfjs.GlobalWorkerOptions.workerSrc = "/pdf.worker.js";
+
 const Resume = () => {
 	const [numPages, setNumPages] = useState(null);
 	const [pageNumber, setPageNumber] = useState(1);
@@ -16,8 +17,9 @@ const Resume = () => {
 
 	return (
 		<Document
-			file='https://res.cloudinary.com/dhqp2dd6b/image/upload/v1618349775/o33wbjxdcparipkyalz4.pdf'
-			onLoadSuccess={onDocumentLoadSuccess}>
+			file={resume}
+			onLoadSuccess={onDocumentLoadSuccess}
+			onLoadError={err => console.error(err)}>
 			<Page pageNumber={pageNumber} />
 		</Document>
 	);
