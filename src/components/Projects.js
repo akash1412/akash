@@ -20,7 +20,7 @@ const ProjectItems = [
 		id: 1,
 		title: "TED SMRZR",
 		about:
-			"It's a web app which summarizes your favourate large TED Talks and provides small",
+			"It's an online platform that can summarize selected TED talks and outputs the summarized talk in a nice format to read, It Provides the option of a Youtube search / Pasting Talk link. It also has the feature of comparing multiple similar Talks.",
 		stack: "NEXTJS - CONTEXT API - TAILWIND CSS - AWS SERVELESS",
 		imgSrc: projImg1,
 		links: [
@@ -32,7 +32,7 @@ const ProjectItems = [
 		id: 2,
 		title: "JS Quiz Draw",
 		about:
-			"An Excitng Drawing Quiz Game, where the user has to draw requested shape in limited time, the drawing is later verified by the google trained ML model",
+			"An Exciting Drawing Quiz Game, where the user has to draw the requested shape in a limited time, the drawing is later verified by the google trained ML model.",
 		imgSrc: projImg2,
 		stack: "NEXTJS - CONTEXT API - TAILWIND CSS - AWS SERVELESS",
 		links: [
@@ -119,6 +119,7 @@ const Project = ({ id, imgSrc, title, about, links, stack }) => (
 				textAlign={["center", "center", "center", "initial"]}>
 				<Heading
 					as='h2'
+					color='text'
 					justifySelf='start'
 					lineHeight='2rem'
 					fontSize='1.5rem'>
